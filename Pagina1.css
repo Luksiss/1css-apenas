@@ -151,3 +151,26 @@ h3  {background-image: url(gradiente1.png);
   
 
                   footer {font-family: vapor; text-align: center; }
+
+                  .div35 {
+                    perspective: 300px;	
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 25vh;
+                  }
+                  
+                  .square {
+                    width: 200px;
+                    height: 200px;
+                    background: rgba(128, 128, 128, 0);
+                    transform: rotateY(45deg);
+                    animation: rotateAnimation 4s linear infinite;
+                  }
+                  
+                  @keyframes rotateAnimation {
+                    from {transform: rotateY(45deg);}
+                    to {transform: rotateY(405deg);}
+                  }
+                  
+                  .mid {text-align: center; font-family: vapor;color: rgb(0, 0, 0); }
